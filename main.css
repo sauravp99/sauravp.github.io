@@ -1,0 +1,309 @@
+html {
+    font-size: 2vw;
+}
+
+body {
+    margin: 0;
+    background-color: #dafdf0;
+
+}
+
+/* TEXT */
+
+h1,h2 {
+    /* margin-top: 10px; */
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: "Raleway", sans-serif;
+    font-size: 8em;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    color: #e36f45;
+    /* color : #be9d4b;  */
+}
+h2 {
+    color: rgb(83, 53, 35);
+    font-weight:bold;
+    word-spacing: 0.3em;
+    line-height: 1.7em;
+    font-size: 5rem;
+}
+
+p {
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    word-spacing: 0.3em;
+    line-height: 1.7em;
+    /* margin: 1em; */
+    /* font-family: 'Nunito', sans-serif; */
+}
+
+.button_about_me {
+    width:fit-content;
+    justify-self: end;
+    margin: 1em 1em;
+}
+
+.button_about_me:hover {
+    cursor: pointer;
+}
+
+.button_about_me .about_me_text {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* The Modal (background) */
+.modal_about_me {
+    /* display: block;  */
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+.modal_about_me_content {
+    background-color: #e9fbf4;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+    border-radius: 2em;
+
+}
+  
+.modal_content_grid {
+    display: grid;
+    grid-auto-flow: row;
+
+}
+  /* The Close Button */
+.close_btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close_btn:hover,
+.close_btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.background_wave {
+    bottom: 0%;
+    width: 150%;
+    position: fixed;
+}
+
+.background_box {
+    width: 80%;
+    position: fixed;
+    z-index: -1;
+    top: 25%;
+    right: 10%; 
+    justify-content: center;
+}
+
+.illustration {
+    width: 45%;
+    position: fixed;
+    bottom: 0%;
+    margin: 1em;
+}
+
+.illustration_about_me {
+    width: 100%;
+}
+
+.eye_box {
+    background-color: #a4f9da;
+    width: 10em;
+    height: 10em;
+    border-radius: 25px;
+    top: 1%;
+    z-index: 0;
+    position: absolute;
+
+    /* animation: bounce; /*referring directly to the animation's @keyframe declaration 
+    animation-duration: 2s; /* don't forget to set a duration!
+    animation-iteration-count: infinite 2; */
+    /* animation-timing-function: ease-in; */
+
+    -webkit-animation: flu 4s infinite; /* <-- changed to 2s (1 second animation and 1 second pause) */
+    animation: flu 4s infinite; /* <-- changed to 2s (1 second animation and 1 second pause)  */
+}
+    @keyframes flu {
+        50%, 100% { transform: rotate(0deg); }  /* changed 66% to 50% */
+        75%       { transform: rotate(90deg); } /* changed 83% to 75% */
+    }
+    @-webkit-keyframes flu {
+        50%, 100% { transform: rotate(0deg); }  /* changed 66% to 50% */
+        75%       { transform: rotate(90deg); } /* changed 83% to 75% */
+    }
+
+.top {
+    display: grid;
+    /* position: relative; */
+    grid-template-columns: 50% 50%;
+    height: fit-content;
+    /* border: solid black 0.1em; */
+}
+    
+.mid {
+    margin-left: 3em;
+}
+
+.mid_container {
+    text-align: center;
+    width: 95%;
+}
+
+
+#dnmode {
+    margin: 1em 2em;
+    width: 10em;
+
+}
+
+
+#eye {
+    width: 10em;
+    position: relative;
+    z-index: 1;
+
+}
+
+/* 
+.grid_home {
+    display: grid; 
+}
+
+/* 
+.title {
+    top: 20px;
+
+    font-size: 70px;
+} */
+
+/* https://www.youtube.com/watch?v=5KJMD2GnBsg */
+
+@media screen and (min-width: 900px) {
+    
+
+    .mid_container {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 2.3em;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.7em;
+        margin-left: 5em;
+    }
+
+    .top{
+        height: fit-content;
+    }
+
+    #dnmode, #eye, .eye_box {   
+        width: 3em;
+        margin: 1em 3em;
+        margin-bottom: 0;
+    }
+
+    .eye_box {
+        width: 3em;
+        height: 3em;
+        margin: 0em;
+        margin-top: 1em;
+    }
+    
+    #eye {
+        margin: 0;
+    }
+
+    .button_about_me {
+        margin: 1em 0em 0em 0em;
+        margin-right: 4em;
+        padding: 0%;
+    }
+    
+    .modal_about_me_content {
+        margin: 5% auto;
+        width: 80%;
+    }
+    .modal_content_grid {
+        /* grid-template-columns: 50% 30%; */
+        grid-auto-flow: column;
+        /* border: solid black 2em; */
+
+    }
+    .mid {
+        margin: 0rem 10rem;
+        width: 50%;
+    }
+    
+    .mid_container {
+        text-align: left;
+        /* width: 100%; */
+        /* max-width: 1200px; */
+        margin-right: auto;
+        margin-left: auto;
+    
+    }
+    
+    .background_wave{
+        /* position: fixed; */
+        bottom: 0%;
+        width: 60%;
+    }
+
+    .background_box {
+        width: 30%;
+        position: fixed;
+        z-index: -1;
+        top: 23%;
+        right: 45%; 
+        justify-content: center;
+    }
+
+    .illustration {
+        visibility: visible;
+        width: 30%;
+        position: fixed;
+        bottom: 0%;
+        right: 10%;
+    }
+    
+    .illustration_about_me {
+        width: 120%;
+    }
+    
+}
