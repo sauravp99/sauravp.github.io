@@ -4,9 +4,17 @@ html {
 
 body {
     margin: 0;
-    background-color: #dafdf0;
-
+    /* background-color: #dafdf0; */
 }
+
+.index {
+    background-color: #dafdf0;
+}
+
+.frontend {
+    background-color: #FFE9E9;
+}
+
 
 /* TEXT */
 
@@ -37,6 +45,34 @@ p {
     line-height: 1.7em;
     /* margin: 1em; */
     /* font-family: 'Nunito', sans-serif; */
+}
+
+.animate_word {
+    cursor: pointer;
+}
+.animate_word:hover {
+    font-size: 1.2em;
+}
+
+#word_art {color: #283266;}
+#word_art:hover {
+    text-shadow: 0 0 10px #cdd2eb,
+                 0 0 20px #8297ff, 
+                 0 0 40px #8297ff;
+}
+
+#word_design {color: #5a3d5d;}
+#word_design:hover {
+    text-shadow: 0 0 10px #f5cff8,
+                 0 0 20px #f6b2fc, 
+                 0 0 40px #f9b4ff;
+}
+
+#word_program {color: #6e0a14;}
+#word_program:hover {
+    text-shadow: 0 0 10px #f5bec3,
+                 0 0 20px #fa838f, 
+                 0 0 40px #fa838f;
 }
 
 .button_about_me {
@@ -113,6 +149,7 @@ p {
     bottom: 0%;
     width: 150%;
     position: fixed;
+    z-index: -1;
 }
 
 .background_box {
@@ -193,6 +230,26 @@ p {
 
 }
 
+.arrow_icon {
+    width: 8%;
+    position: fixed;
+    z-index: 1;
+}
+
+#arrow_down {
+    /* width: 8%; */
+    bottom: 4%;
+    left: 50%;
+}
+
+#arrow_right {
+    bottom: 30%;
+    right: 4%;
+}
+#arrow_left {
+    bottom: 30%;
+    left: 4%;
+}
 /* 
 .grid_home {
     display: grid; 
@@ -283,6 +340,11 @@ p {
         /* position: fixed; */
         bottom: 0%;
         width: 60%;
+    }
+
+    #wave_red {
+        width: 100%;
+        height: 50%;
     }
 
     .background_box {
